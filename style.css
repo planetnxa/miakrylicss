@@ -3,3 +3,7 @@ nav{
     color: white;
     text-align: center;
 }
+body{
+    background-color: rgb(255, 225, 210);
+    font-family: Arial, Helvetica, sans-serif;
+}

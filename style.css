@@ -9,6 +9,7 @@ body{
     background-color: rgb(255, 225, 210);
     color: rgb(77,67,63);
     font-family: 'Didact Gothic',Helvetica, sans-serif;
+    background-image: image();
 }
 /*
 font-family: 'Bodoni Moda', serif;

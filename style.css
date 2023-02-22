@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 nav{
     background-color: rgb(255, 140, 78);
     color: white;
@@ -5,5 +6,6 @@ nav{
 }
 body{
     background-color: rgb(255, 225, 210);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77,67,63);
+    font-family: 'Didact Gothic',Helvetica, sans-serif;
 }

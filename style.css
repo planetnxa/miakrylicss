@@ -9,6 +9,7 @@ nav{
     padding-top: 5px;
     font-weight: bolder;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 .init{
     background-image: url(img/GRAD1.png);
@@ -17,6 +18,11 @@ nav{
     padding-top: 30px;
 
 
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
 }
 body{
     background-color: rgb(255, 225, 210);
@@ -27,8 +33,8 @@ body{
     background-position: center;
     margin: 0;
     font-size: larger;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 h1{
@@ -44,7 +50,45 @@ h1{
 }
 
 .policy{
+    text-align: center;
     font-size: 30px;
+    background-color: #ffffff;
+    color: #EF8065;
+    border: solid #FFC69F;
+    width: 1400px;
+    height: fit-content;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.service{
+    background-color: #ffffff;
+    border: 5px solid #EF5B47 ;
+    float: left;
+    display: inline;
+    width: 450px;
+    height: 750px;
+    margin: 0 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.btn2{
+    background-color: #FFC69F;
+    color: #F4805F;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    bottom: -250px;
+    left:70px;
 }
 
 .booking{
@@ -54,6 +98,65 @@ h1{
     padding: 20px;
     text-align: center;
 }
+
+label{
+    display: block;
+    margin: 10px;
+
+}
+.io{
+    height: 50px;
+    width: 600px;
+    font-size: 30px;
+    font-family: 'Didact Gothic',Helvetica, sans-serif;
+}
+
+input[type="submit"]{
+    background-color: #EF8065;
+    color: rgb(77,67,63);
+
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    margin: auto;
+    font-size: 30px;
+    border: 0px;
+}
+
+fieldset{
+    border: 0px;
+    display: inline;
+}
+
+.msg{
+    width: 700px;
+    height: 300px;
+    text-align: start;
+    font-size: 35px;
+}
+.review{
+    background-color: #ffffff00;
+    float: left;
+    display: inline;
+    width: 450px;
+    height: 750px;
+    margin: 0 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;}
+
+    .review>img{
+    
+        height: 40%;
+    }
+
+    .txt{
+        border: 5px solid #EF5B47 ;
+        background-color: #ffffff28;
+        margin-top: 10px;
+
+    }
+
 .edit{
     color: white;
     text-align: center;
@@ -69,6 +172,8 @@ h1{
 
 .btn1{
     background-color: #EF8065;
+    color: rgb(77,67,63);
+
     width: fit-content;
     height: fit-content;
     padding: 15px;
@@ -111,4 +216,9 @@ float: right;
     float: left;
     margin: 20px
 
+}
+
+a,  a:visited, a:active{
+    color: inherit;
+    text-decoration: none;
 }

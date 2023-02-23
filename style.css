@@ -79,14 +79,15 @@ h1{
 .service{
     background-color: #ffffff;
     border: 5px solid #EF5B47 ;
-    float: left;
     display: inline;
-    width: 450px;
-    height: 750px;
+    width: 300px;
+    height: 400px;
     margin: 0 20px;
     text-align: center;
-    padding: 20px;
     font-size: 35px;
+}
+.service>img{
+    width: 70%;
 }
 
 .btn2{
@@ -98,9 +99,6 @@ h1{
     margin: auto;
     font-size: 40px;
     font-weight: bolder;
-    position: relative;
-    bottom: -250px;
-    left:70px;
 }
 
 .booking{
@@ -150,8 +148,8 @@ fieldset{
     background-color: #ffffff00;
     float: left;
     display: inline;
-    width: 450px;
-    height: 750px;
+    width: 300px;
+    height: 600px;
     margin: 0 20px;
     text-align: center;
     padding: 20px;
@@ -214,7 +212,7 @@ fieldset{
     width: 200px;
     float: left;
     margin: 30px;
-    padding-right: 150px;
+    padding-right: 15px;
     font-size: 25px;
 }
 .hrs{
@@ -231,11 +229,6 @@ fieldset{
     font-size: 25px;
 
 }
-.centr{
-    display: flex;
-    justify-content: center;
-}
-
 .b{
     position: absolute;
     top: 0;

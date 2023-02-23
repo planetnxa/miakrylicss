@@ -3,10 +3,19 @@
 nav{
     background-color: #fffcfb;
     color: rgb(239,128,101);
-    height: 30px;;
+    height: 30px;
+    font-size: 20px;
     text-align: center;
     padding-top: 5px;
     font-weight: bolder;
+}
+.init{
+    background-image: url(img/GRAD1.png);
+    height: 350px;
+    background-position: center;
+    padding-top: 30px;
+
+
 }
 body{
     background-color: rgb(255, 225, 210);
@@ -14,15 +23,34 @@ body{
     font-family: 'Didact Gothic',Helvetica, sans-serif;
     background-image: url("img/GRADBG.png");
     background-size: 100%;
+    background-position: center;
     margin: 0;
 }
 h1{
     font-family: 'WindSong', cursive;
     text-shadow:2px 2px 4px #423732;
     color: #ffdfd0;
-    font-weight: 500;
-    font-size: 80px;
+    font-weight: 400;
+    font-size: 130px;
     text-align: center;
+    margin-top: 50px;
+
+}
+.booking{
+    background-color: #FFDFD0;
+    height: 200px;
+    align-items: center;
+}
+.edit{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.b2{
+    background-color: #EF8065;
+    width: 50px;
+    height: 70px;
 }
 /*
 font-family: 'Bodoni Moda', serif;

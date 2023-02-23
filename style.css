@@ -44,7 +44,7 @@ h1{
 }
 .booking{
     background-color: #FFDFD0;
-    height: 300px;
+    height: 200px;
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -77,6 +77,11 @@ h1{
     position: absolute;
     top: 70px;
 }
+
+.idk{
+    position: relative;
+    top: 10px;
+}
 .title-txt{
     font-family: 'Bodoni Moda', serif;
     font-size: 120px;
@@ -84,6 +89,21 @@ h1{
 
 }
 
-/*
-font-family: 'Didact Gothic', sans-serif;
-*/
+.day{
+display: inline;
+width: 250px;
+float: right;
+}
+.time{
+    display: inline;
+    width: 200;
+    float: right;
+
+}
+.info{
+    display: inline;
+    width: 200;
+    float: left;
+    margin: 20px
+
+}

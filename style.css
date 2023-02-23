@@ -75,7 +75,10 @@ h1{
     margin-bottom: 20px;
     font-weight: bolder;
 }
-
+.centr{
+    display: flex;
+    justify-content: center;
+}
 .service{
     background-color: #ffffff;
     border: 5px solid #EF5B47 ;
@@ -87,7 +90,7 @@ h1{
     font-size: 35px;
 }
 .service>img{
-    width: 70%;
+    width: 70%
 }
 
 .btn2{

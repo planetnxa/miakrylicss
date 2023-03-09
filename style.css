@@ -122,12 +122,13 @@ label{
     width: 600px;
     font-size: 30px;
     font-family: 'Didact Gothic',Helvetica, sans-serif;
+    border: 20px #EF5B47;
+
 }
 
 input[type="submit"]{
     background-color: #EF8065;
     color: rgb(77,67,63);
-
     width: fit-content;
     height: fit-content;
     padding: 15px;
@@ -146,6 +147,8 @@ fieldset{
     height: 300px;
     text-align: start;
     font-size: 35px;
+    border: 20px #EF5B47;
+
 }
 .review{
     background-color: #ffffff00;

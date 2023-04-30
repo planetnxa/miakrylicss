@@ -3,50 +3,48 @@
 nav{
     background-color: #fffcfb;
     color: #EF8065;
-    height: 30px;
+    
     font-size: 20px;
     text-align: center;
     padding-top: 5px;
     font-weight: bolder;
     margin-top: 40px;
-    margin-bottom: 30px;
+
 }
+/*media query, one this is a certain size shrink it*/
 
 .chosen{
  color: #fffcfb;
  background-color: #EF8065;   
 }
-
-.init{
-    background-image: url(img/GRAD1.png);
-    height: 350px;
-    background-position: center;
-    padding-top: 30px;
-
-
-}
 h2{
     font-size: 40px;
     margin-top: -20px;
     margin-bottom:-1px;
-    text-align: center;
+    font-family: 'Bodoni Moda',serif;
+    z-index: -100;
 }
+
+
 
 html{
     height: 100%;
     width: 100%;
 }
+
+
 body{
-    background-color: rgb(255, 225, 210);
-    color: rgb(77,67,63);
+    color: rgb(0, 0, 0);
     font-family: 'Didact Gothic',Helvetica, sans-serif;
-    background-image: url("img/GRADBG.png");
-    background-size:inherit;
+    background-image: url("img/slide1.png"),url("img/GRAD1.png");
+    background-attachment: fixed;
     background-position: center;
-    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: larger;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 h1{
@@ -55,10 +53,17 @@ h1{
     color: #ffdfd0;
     font-weight: 400;
     font-size: 130px;
-    text-align: center;
     margin-top: 30px;
     margin-bottom: -10px;
 
+}
+
+.smol{
+    height: 40%;
+}
+
+p{
+    font-family: 'Bodoni Moda';
 }
 
 .policy{
@@ -67,18 +72,11 @@ h1{
     background-color: #ffffff;
     color: #EF8065;
     border: solid #FFC69F;
-    width: 1000px;
-    height: fit-content;
-    margin: auto;
     padding: 20px;
     margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: bolder;
+   margin-bottom: 20px;
 }
-.centr{
-    display: flex;
-    justify-content: center;
-}
+
 .service{
     background-color: #ffffff;
     border: 5px solid #EF5B47 ;
@@ -216,15 +214,13 @@ fieldset{
 .day{
     display: inline;
     width: 200px;
-    float: left;
     margin: 30px;
     padding-right: 15px;
-    font-size: 25px;
+    font-size: 2vw;
 }
 .hrs{
     width: fit-content;
     height: 100%;
-    float: right;
 }
 .info{
     display: inline;

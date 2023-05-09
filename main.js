@@ -89,4 +89,6 @@ var bService = {
         help.innerHTML= "added is now <br>"+bService.name+"<br>"+bService.extras[0].name+"thast name <br>"+added+"<br> total price  a- "+bService.totalPrice;
 });
 
+
+
   //the data is all there, i just need 

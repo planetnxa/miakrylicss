@@ -7,7 +7,7 @@
    Variables declared by var are available throughout the function in which they're declared
   */
   //then store the id
-select = "gel";
+select = "acryl"; //you should check this tbh because we need to back and change it accordingly
 const addonList = 
 [
   {name: "XL Length",price: 15},
@@ -25,7 +25,7 @@ var serviceName = "";
 var servicePrice = 0;
 
 switch(select){
-  case "acry":
+  case "acryl":
     serviceName = "Acrylics";
     servicePrice = 45;
     addons = [addonList[0],addonList[1],addonList[3],addonList[4],addonList[5],addonList[7]];
@@ -44,42 +44,49 @@ switch(select){
       serviceName = "Removal";
       servicePrice = 20;
 }
-//i think from here i need to print the list of items 
   
-     
+    var added = 0;
+    help = document.getElementById("test");
+
     let alist = document.getElementById("extras");
-     
+    let xselection = [];
+    
+    idVal = 0;
     addons.forEach((item) => {
       let li = document.createElement("li");
       
-      li.innerHTML = "<input type='checkbox' id='"+item.name+"'><label for='"+item.name+"' >" + item.name + "</label>";
+      li.innerHTML = "<input type='checkbox' id='"+idVal+"'><label for='"+item.name+"' >" + item.name + "</label>";
       alist.appendChild(li);
+      idVal=idVal+1;
     });
+    
     $('button.send').click(function(){    
-      let xtrasselection = [];
+      xselection = [];
+      added = 0;
 
       $('input:checked').each(function() {
-        apptselection.push($(this).attr('id'));
-    });          console.log(apptselection[1]);
+        xselection.push($(this).attr('id'));
+    });       
    
     $('input:checked').each(function(){
       $(this).attr('checked',false);
-    })
-
-  });
-
-/*create an object, store it....make final price and add description. so it can be moved to the final object thing
-anyways  date and time should be open now.....create an object to make dates and stuff
-icba to check for availability
-but yeah just put out a lil datey date
-
-then make a form to put out details
-pass those details
-and scene
-
-*/
+    });
+    
+    let userAdd = [];
+  for (let i = 0; i < xselection.length; i++) {
+    var val = addons[xselection[i]];
+    userAdd.push(val);
+  }
+  for(let k =0;k<userAdd.length;k++){
+    added = added+userAdd[k].price;
+  }
 var bService = {
     name: serviceName,
     price: servicePrice,
-    extras: addons
+    extras: userAdd,
+    totalPrice: servicePrice+added
   };
+        help.innerHTML= "added is now <br>"+bService.name+"<br>"+bService.extras[0].name+"thast name <br>"+added+"<br> total price  a- "+bService.totalPrice;
+});
+
+  //the data is all there, i just need 

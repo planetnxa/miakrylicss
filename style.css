@@ -57,7 +57,14 @@ h1{
     margin-bottom: -10px;
 
 }
-
+ul {
+    list-style-type: none;
+    background-color: #ffffff;
+  }
+  li{
+    border: #423732 solid;
+  }
+  
 .smol{
     height: 40%;
 }

@@ -1,31 +1,74 @@
-bService
-let bService = {
-    name: "handacrylics",
-    price: 45,
-    addons: ["some list"],
-    eyeColor: "blue"
-  };
-  /*"""on div click set value to hand
-now when they click on the crylics div, create a new object
-acrylic = doc.get element by id. acrylic hand id thing
-onclick....
-  create the acrylic object with bservice
-  price = 45
-  addons list
+  $("a.selection").click(function(){
+  var select = $(this).attr('id');    
+  $(this).html(selected);
+  });
+  /*
+  Variables declared by let are only available inside the block where they're defined.
+   Variables declared by var are available throughout the function in which they're declared
+  */
+  //then store the id
+select = "gel";
+const addonList = 
+[
+  {name: "XL Length",price: 15},
+  {name: "Glitter", price: 10},
+  {name: "Paint", price: 10},
+  {name: "French Tip", price: 5},
+  {name: "Gems", price: 5},
+  {name: "Plus removal",price:15},
+  {name: "BIAB - NEW!!",price:10},
+    {name: "Custom Designs",price:15}
 
-  now you will open the list 
+];
+var addons = [];
+var serviceName = "";
+var servicePrice = 0;
 
+switch(select){
+  case "acry":
+    serviceName = "Acrylics";
+    servicePrice = 45;
+    addons = [addonList[0],addonList[1],addonList[3],addonList[4],addonList[5],addonList[7]];
+    break;
+    case "mani":
+      serviceName = "Manicure";
+    servicePrice = 45;
+    addons = [addonList[1],addonList[2],addonList[3]];
+    break;
+    case "gel":
+      serviceName = "Gel";
+    servicePrice = 35;
+    addons = [addonList[1],addonList[2],addonList[3],addonList[6],addonList[7]];
+    break;
+    case "remove":
+      serviceName = "Removal";
+      servicePrice = 20;
+}
+//i think from here i need to print the list of items 
+  
+     
+    let alist = document.getElementById("extras");
+     
+    addons.forEach((item) => {
+      let li = document.createElement("li");
+      li.innerText = item.name;
+      alist.appendChild(li);
+    });
+//now when you select there should be like a checklist thing
+/*then when they click book then create
 
+create an object, store it....make final price and add description. so it can be moved to the final object thing
+anyways  date and time should be open now.....create an object to make dates and stuff
+icba to check for availability
+but yeah just put out a lil datey date
+
+then make a form to put out details
+pass those details
+and scene
 
 */
-
-
-//you might need to simplify it yk ,just so you can at least get it done. because all of it 
-//is the same but you give yourself extra work for the sake of aesthetics. it's okay
-//might just do hand
-//then make the feet section non selectable, coming soon!
-const addonsList = ["xl length", "french tip", "gems", "ft removal","custom design"];
-if(selected service == hands)
-let addons = addonsList[full thing]
-
-serviceType = document.getElement()
+var bService = {
+    name: serviceName,
+    price: servicePrice,
+    extras: addons
+  };

@@ -51,13 +51,24 @@ switch(select){
      
     addons.forEach((item) => {
       let li = document.createElement("li");
-      li.innerText = item.name;
+      
+      li.innerHTML = "<input type='checkbox' id='"+item.name+"'><label for='"+item.name+"' >" + item.name + "</label>";
       alist.appendChild(li);
     });
-//now when you select there should be like a checklist thing
-/*then when they click book then create
+    $('button.send').click(function(){    
+      let xtrasselection = [];
 
-create an object, store it....make final price and add description. so it can be moved to the final object thing
+      $('input:checked').each(function() {
+        apptselection.push($(this).attr('id'));
+    });          console.log(apptselection[1]);
+   
+    $('input:checked').each(function(){
+      $(this).attr('checked',false);
+    })
+
+  });
+
+/*create an object, store it....make final price and add description. so it can be moved to the final object thing
 anyways  date and time should be open now.....create an object to make dates and stuff
 icba to check for availability
 but yeah just put out a lil datey date

@@ -36,7 +36,7 @@ html{
 body{
     color: rgb(0, 0, 0);
     font-family: 'Didact Gothic',Helvetica, sans-serif;
-    background-image: url("img/slide1.png"),url("img/GRAD1.png");
+    background-image: url("img/GRAD1.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

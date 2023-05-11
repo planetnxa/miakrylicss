@@ -1,36 +1,92 @@
   @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Didact+Gothic&family=WindSong:wght@400;500&display=swap');
-nav{
-    background-color: #fffcfb;
-    color: #EF8065;
+
+  
+
+    .resize{
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    background-color: #ff987e8a;
+}
+
+.resize::before{
+    content: "";
+    background-image: url("img/indx.jpg");
+    background-size: cover;
+    background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.4;
+    /* use a pseudoelement to apply stuff to bgimage before the content of the actual class*/
+    }
+
+    .btnLayout{
+        margin:20px; 
+        border: none;
+        border-radius: 20px;     
+    background-color: #FFCCB3;
+    color: rgb(77,67,63);
+    font-size: larger;
+    width: 8rem;
+    height: 4rem;
+    }
     
-    font-size: 20px;
-    text-align: center;
-    padding-top: 5px;
-    font-weight: bolder;
-    margin-top: 40px;
 
-}
-/*media query, one this is a certain size shrink it*/
-
-.chosen{
- color: #fffcfb;
- background-color: #EF8065;   
-}
-h2{
-    font-size: 40px;
-    margin-top: -20px;
-    margin-bottom:-1px;
+  .marginless{
+    margin: 0;
+    padding: 0; 
+    z-index: -50;
+    /* remove the padding on the container to let it be full screen */
+  }
+  
+  h2{
+    font-size: 2em;
+    font-weight:600;
     font-family: 'Bodoni Moda',serif;
-    z-index: -100;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 2rem;
+    width: 60%;
+    display: flex;
+justify-content: center;
+margin: auto;
+font-weight: 400;
+color: #45281b;
+
+
+}
+
+
+h1{
+    display: inline;
+    font-family: 'WindSong', cursive;
+    text-shadow:2px 2px 4px #423732;
+    color: #ffdfd0;
+    font-weight: 400;
+    font-size: 600%;
+    margin-top: 250px;
+    margin-bottom: 0px;
+}
+
+.re{
+    color: #EF5B47;
+    border: none;
 }
 
 
 
-html{
-    height: 100%;
-    width: 100%;
+
+footer{
+    padding: 10px;
+    padding-top: 20px;
 }
+
 
 
 body{
@@ -47,31 +103,40 @@ body{
     text-align: center;
 }
 
-h1{
-    font-family: 'WindSong', cursive;
-    text-shadow:2px 2px 4px #423732;
-    color: #ffdfd0;
-    font-weight: 400;
-    font-size: 130px;
-    margin-top: 30px;
-    margin-bottom: -10px;
+/*if the screen gets larger than 768, so md is initialised, activate hamburger menu#
+so the css only applies to div in these conditions
+*/.navinside{
+    color: #ffffff;    
+    font-weight: bold;
 
 }
+.ham{
+    border: none;
+
+}
+@media only screen and (min-width: 768px) {
+    
+.full{
+    background-color: #fffffffe;
+}
+.navinside
+{color: #EF8065;
+}
+}
+
 ul {
     list-style-type: none;
-    background-color: #ffffff;
+    margin: auto;
+
   }
   li{
-    border: #423732 solid;
+    border: #423732 
   }
   
 .smol{
     height: 40%;
 }
 
-p{
-    font-family: 'Bodoni Moda';
-}
 
 .policy{
     text-align: center;

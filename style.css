@@ -10,6 +10,10 @@
     background-color: #ff987e8a;
 }
 
+form{
+    text-align: left;
+}
+
 .resize::before{
     content: "";
     background-image: url("img/indx.jpg");
@@ -27,7 +31,8 @@
     .btnLayout{
         margin:20px; 
         border: none;
-        border-radius: 20px;     
+        border-radius: 20px;
+        align-items: center;     
     background-color: #FFCCB3;
     color: rgb(77,67,63);
     font-size: larger;
@@ -43,12 +48,25 @@
     /* remove the padding on the container to let it be full screen */
   }
   
-  h2{
-    font-size: 2em;
+  h2,h3{
+    font-size: 3em;
     font-weight:600;
     font-family: 'Bodoni Moda',serif;
-    text-transform: uppercase;
 }
+h3{
+    font-size: 1.5em;
+}
+
+.extra{
+    background-color: #ffffff;
+    margin: 2%;
+    font-family: 'Bodoni Moda',serif;
+    padding: 5%;
+    border:2px #FFC69F;
+    font-size: 1.25em;
+}
+
+
 
 p{
     font-size: 2rem;
@@ -72,11 +90,6 @@ h1{
     font-size: 600%;
     margin-top: 250px;
     margin-bottom: 0px;
-}
-
-.re{
-    color: #EF5B47;
-    border: none;
 }
 
 
@@ -110,6 +123,17 @@ so the css only applies to div in these conditions
     font-weight: bold;
 
 }
+/* //change where these rules are */
+.card{
+background-color: #ffffff4a;
+border: 3px white;
+width: 15em;
+margin: auto;
+}
+.card-text{
+    font-size: 1em;
+height: 4em;
+}
 .ham{
     border: none;
 
@@ -124,13 +148,20 @@ so the css only applies to div in these conditions
 }
 }
 
-ul {
+ul{
     list-style-type: none;
     margin: auto;
 
-  }
-  li{
-    border: #423732 
+}
+
+.selectList {
+    margin: auto;
+    background-color: #ffdfd0;
+    width:fit-content;
+    text-align: left;
+    padding: 5%;
+    font-size: 2em;
+    font-family: 'Bodoni Moda';
   }
   
 .smol{
@@ -205,7 +236,18 @@ input[type="submit"]{
     margin: auto;
     font-size: 30px;
     border: 0px;
+    color: #45281b;
+    /*
+    iddeally these two would be in two different tables and the
+    */
 }
+input[type="checkbox"]{
+    background-color: #EF8065;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
 
 fieldset{
     border: 0px;

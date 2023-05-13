@@ -29,15 +29,19 @@ form{
     }
 
     .btnLayout{
-        margin:20px; 
+        margin: 20px;
         border: none;
         border-radius: 20px;
-        align-items: center;     
+        text-align: center;   
     background-color: #FFCCB3;
     color: rgb(77,67,63);
     font-size: larger;
     width: 8rem;
     height: 4rem;
+    }
+
+    .mid{
+        margin-top: 7px;
     }
     
 
@@ -48,13 +52,17 @@ form{
     /* remove the padding on the container to let it be full screen */
   }
   
-  h2,h3{
+  h2,h3,h4{
     font-size: 3em;
     font-weight:600;
     font-family: 'Bodoni Moda',serif;
 }
 h3{
     font-size: 1.5em;
+}
+
+h4{
+    font-size: 2em;
 }
 
 .extra{
@@ -127,11 +135,11 @@ so the css only applies to div in these conditions
 .card{
 background-color: #ffffff4a;
 border: 3px white;
-width: 15em;
+width: 20em;
 margin: auto;
 }
 .card-text{
-    font-size: 1em;
+    font-size: 1.5em;
 height: 4em;
 }
 .ham{
@@ -163,6 +171,14 @@ ul{
     font-size: 2em;
     font-family: 'Bodoni Moda';
   }
+
+  .dateSet{
+    display: flex;
+    flex-direction: column;
+        text-align: center;
+
+  }
+  
   
 .smol{
     height: 40%;
@@ -226,21 +242,26 @@ label{
     border: 20px #EF5B47;
 
 }
-
-input[type="submit"]{
-    background-color: #EF8065;
-    color: rgb(77,67,63);
+input[type="date"],input[type="time"]{
     width: fit-content;
     height: fit-content;
+}
+input{
+    background-color: #ffffff;
+    color: rgb(77,67,63);
+    width: 20em;
+    height: 50px;
     padding: 15px;
     margin: auto;
-    font-size: 30px;
+    font-size: 1em;
     border: 0px;
     color: #45281b;
     /*
     iddeally these two would be in two different tables and the
     */
 }
+
+
 input[type="checkbox"]{
     background-color: #EF8065;
     width: 50px;
@@ -308,21 +329,6 @@ fieldset{
     margin: auto;
     font-size: 50px;
 }
-
-.background{
-    opacity: 25%;
-    z-index: -999;
-    position: absolute;
-    top: 70px;
-}
-
-.title-txt{
-    font-family: 'Bodoni Moda', serif;
-    font-size: 120px;
-    text-align: center;
-
-}
-
 
 
 .day{

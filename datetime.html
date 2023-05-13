@@ -49,41 +49,49 @@
     </div>
     <br>
 <h2>TIME AND DATE</h2>
-  <form action="clientdeets.html">
+  <form>
 
 <div class="container">
   <div class="row">
 
-  <div class="col-6 border">
+  <div class="col-md">
 
-    <label for="datee">Select a date <input type="date" max="2023-06-11" min="2023-05-12" id="datee" ></label>
-    <br>
-    <!--style it-->
-  <label for="timee">Select a time <input type="time" min="10:00" max="18:00" id="timee" ></label>
-  <br>please see the opening times to avoid disappointment.
-  <br>
-  your appointment will be on the:
-    </div>  <div class="col-6">
-
+      <div class="dateSet">
+        <label for="datee">Select a date<br> <input type="date" max="2023-06-11" min="2023-05-12" id="datee" ></label>
+        <br>
+        <!--style it-->
+          <label for="timee">Select a time<br> <input type="time" min="10:00" max="18:00" id="timee" ></label>
+          <p>please see the opening times to avoid disappointment!.</p>
 <br>
+  <h3 id="apptdate">-</h3>
+  <h4 id="apptime">-</h4>
 
-
-      <label for="name">name<br><input type="text" name="" id="name" required><br></label>
-      <label for="email"><input type="email" name="" id="email">email<br></label>
-      <label for="card"><input type="number" placeholder="just paypal me instead" name="" id="card" disabled>card number<br></label>
-    <!--dont allow input, it's not safe-->
-      <input type="number" placeholder="i'm actually serious, this isn't safe" name="" id="" disabled>security number<br>
-      <input type="text">name on card<br>
-      <button id="conf" class="btnLayout"><a href="confirmbook.html">CONFIRM</a></button>
-      <br> i think i need to just link my paypal or something.....place aside    
+</div>
+    </div>  
+    <div class="col-md">
+<div class="container">
+  <div class="row">
+    
+          <div class="col">
+            <div class="dateSet">
+              <label for="name">name<br><input type="text" name="" id="name" required><br></label>
+              <label for="email">email<br><input type="email" name="" id="email"><br></label>
+              <label for="card">card number<br><input type="number" placeholder="just paypal me instead" name="" id="card" disabled><br></label>
+                  <!--dont allow input, it's not safe-->
+              <label for="secnum">security number<br><input type="number" placeholder="i'm actually serious, this isn't safe" name="" id="secnum" disabled><br></label>
+              <label for="cardname">name on card<br><input type="text" id="cardname"><br></label>
+          </div>
+            <div class="col">
+              <div class="dateSet"><a href="#" id="firm" ><button id="conf" class="btnLayout mid">OKAY</button></a></div>
+            </div>
+            <br>
+          </div>
+  </div>
+</div>
       </div>
 
       </div>
-      </div>  #
-      <div id="apptdate">yes</div>
-
-  <button >next</button>
-
+      </div>
   </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 

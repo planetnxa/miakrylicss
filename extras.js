@@ -9,7 +9,7 @@
   const addonList = 
   [
     {name: "XL Length (£15)",price: 15},
-    {name: "Glitter (210)", price: 10},
+    {name: "Glitter (£10)", price: 10},
     {name: "Paint (£10)", price: 10},
     {name: "French Tip (£5)", price: 5},
     {name: "Gems (£5)", price: 5},

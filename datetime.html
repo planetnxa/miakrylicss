@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Booking</title>
+    <title>MIAKRYLICS | Booking</title>
 </head>
 <body>
     <div class="full">
@@ -49,19 +49,19 @@
     </div>
     <br>
 <h2>TIME AND DATE</h2>
+add the price wth
   <form>
-
 <div class="container">
   <div class="row">
 
   <div class="col-md">
 
       <div class="dateSet">
-        <label for="datee">Select a date<br> <input type="date" max="2023-06-11" min="2023-05-12" id="datee" ></label>
+        <label for="datee">Select a date<br> <input type="date" max="2023-06-11" min="2023-05-12" id="datee" required></label>
         <br>
         <!--style it-->
-          <label for="timee">Select a time<br> <input type="time" min="10:00" max="18:00" id="timee" ></label>
-          <p>please see the opening times to avoid disappointment!.</p>
+          <label for="timee">Select a time<br> <input type="time" min="10:00" max="18:00" id="timee" required></label>
+          <p>please see the opening times to avoid disappointment!</p>
 <br>
   <h3 id="apptdate">-</h3>
   <h4 id="apptime">-</h4>
@@ -74,15 +74,14 @@
     
           <div class="col">
             <div class="dateSet">
-              <label for="name">name<br><input type="text" name="" id="name" required><br></label>
-              <label for="email">email<br><input type="email" name="" id="email"><br></label>
+              <label for="name">name<br><input type="text" name="" id="name"><br></label>
+              <label for="email">email<br><input type="email" name="" id="email" required><br></label>
               <label for="card">card number<br><input type="number" placeholder="just paypal me instead" name="" id="card" disabled><br></label>
                   <!--dont allow input, it's not safe-->
               <label for="secnum">security number<br><input type="number" placeholder="i'm actually serious, this isn't safe" name="" id="secnum" disabled><br></label>
               <label for="cardname">name on card<br><input type="text" id="cardname"><br></label>
-          </div>
+          <a href="#" id="conf" class="btnLayout" style="margin: auto; padding-top: 15px;">OKAY</a></div>
             <div class="col">
-              <div class="dateSet"><a href="#" id="firm" ><button id="conf" class="btnLayout mid">OKAY</button></a></div>
             </div>
             <br>
           </div>

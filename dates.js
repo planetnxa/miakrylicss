@@ -3,6 +3,11 @@ const months = ["January", "February", "March", "April", "May",
 
 $("#conf").text("OKAY");
 
+apS = sessionStorage.getItem("serviceDetails")
+aService = JSON.parse(apS);
+$(".price").text("total: £"+aService.price+".00");
+
+
 
 $("#conf").click(function(){
     if($(this).text()!="CONFIRM"){

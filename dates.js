@@ -5,7 +5,7 @@ $("#conf").text("OKAY");
 
 apS = sessionStorage.getItem("serviceDetails")
 aService = JSON.parse(apS);
-$(".price").text("total: £"+aService.price+".00");
+$(".price").text("total: £"+aService.totalPrice+".00");
 
 
 
@@ -27,10 +27,7 @@ if(d!="Invalid Date"){
                $("#conf").attr("href","confirmbook.html");
 
     }
-                sessionStorage.setItem("appt",final);
+        sessionStorage.setItem("appt",final);
 
 
     });
-
-    //gonna hand it in late idk
-//    2 days is FileSystemEntry. i'm disappointed in myself but i need to rest

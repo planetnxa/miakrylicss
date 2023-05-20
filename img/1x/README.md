@@ -1,2 +1,0 @@
-# miakrylicss
-nail booking page
